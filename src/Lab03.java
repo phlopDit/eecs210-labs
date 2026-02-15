@@ -12,19 +12,19 @@ public class Lab03 {
   public static void printBooleanResult(ArrayList<ArrayList<Integer>> matrix) {
     for(int row = 0; row < matrix.size(); row++) {
       for(int col = 0; col < matrix.get(row).size(); col++) {
-        System.out.print(matrix.get(row).get(col));
+        System.out.print(matrix.get(row).get(col) + " ");
       }
     System.out.println();
     }
   }
   
   public static ArrayList<ArrayList<Integer>> getMatrixA(){
-    System.out.println("Enter Matrix 1: ");
+    System.out.println("Enter Matrix 1: (Leave last row blank to end Matrix)");
     return buildMatrix();
   }
   
   public static ArrayList<ArrayList<Integer>> getMatrixB(){
-    System.out.println("Enter Matrix 2: ");
+    System.out.println("Enter Matrix 2: (Leave last row blank to end Matrix)");
     return buildMatrix();
   }
   
